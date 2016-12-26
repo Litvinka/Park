@@ -1,0 +1,663 @@
+/* 
+    Created on : 14.11.2016, 19:09:08
+    Author     : Masha
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+button{
+    cursor: pointer;
+}
+
+body{
+    width:80%;
+    margin-left:10%;
+}
+h1{
+    font-size: 42px;
+    text-align: center;
+    padding-top:20px;
+    font-weight: bold;
+}
+h6{
+    font-size: 12px;
+    vertical-align: central;
+    padding-top:10px;
+}
+header{
+    background:#003333;
+    color:white;
+    height:110px;
+}
+footer{
+    width:100%;
+    height:30px;
+    background:#003333;
+    color:white;
+    text-align: center;
+    margin-top:60px;
+}
+.footer{
+    position:absolute;
+    bottom:0px;
+    width:80%;
+}
+
+a{
+    color:#003333;
+}
+
+.now{
+    background:#015353; 
+}
+.now a{
+    color:white;
+}
+#in{
+    width:36%;
+    padding:2%;
+    margin-left:30%;
+    border:1px solid grey;
+    margin-top:50px;
+    position: relative;
+}
+form p{
+    margin-bottom:3px;
+    font-size:14px;
+}
+form input,select{
+    margin-bottom: 15px;
+}
+form h3{
+    font-size:21px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.submit{
+    width:30%;
+    height:30px;
+    background: #003333;
+    color:white;
+    border:0px;
+    margin-left: 70%;
+}
+form .submit{
+    margin-bottom:5px;
+}
+
+.container{
+    display:flex;
+    margin-top:25px;
+}
+#addplant input{
+    width:98%;
+}
+#addplant input:last-child{
+    width:40%;
+    margin-left: 60%;
+    margin-top:10px;
+}
+#addplant{
+    width:20%;
+    padding:1.5%;
+    border:1px solid grey;
+    height:140px;
+}
+h2{
+    font-size:29px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+#allplant{
+    width:70%;
+    margin-right:6%;
+}
+
+ul{
+    display: flex;
+    justify-content:space-around;
+    color:#003333;
+    font-size:16px;
+    font-weight: bold;
+    background: white;
+}
+ul li{
+    list-style-type: none;
+    border:1px solid #003333;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+a h1{
+    color:white;
+}
+a{
+    text-decoration: none;
+}
+
+#allforester{
+    width:70%;
+    margin-right:6%;
+}
+#addforester input:last-child{
+    width:40%;
+    margin-left: 60%;
+    margin-top:10px;
+}
+#addforester{
+    width:20%;
+    padding:1.5%;
+    border:1px solid grey;
+    height:360px;
+}
+.table{
+    width:100%;
+    border:1px solid grey;
+}
+tr:first-child{
+    font-weight: bold;
+}
+tr{
+    border-bottom: 1px solid grey;
+    height: 20px;
+}
+td{
+    padding:3px;
+}
+.menu{
+    display:none;
+}
+
+.star{
+    color:red;
+    font-size:12px;
+}
+.edit,.delete img{
+    width:20px;
+    height:20px;
+    border:1px solid grey;
+}
+.out{
+    position: absolute;
+    width:22px;
+    height:22px;
+    top:10px;
+    right:11%;
+}
+#allowner{
+    width:70%;
+    margin-right:6%;
+}
+#addowner input:last-child{
+    width:40%;
+    margin-left: 60%;
+    margin-top:10px;
+}
+#addowner{
+    width:20%;
+    padding:1.5%;
+    border:1px solid grey;
+    height:360px;
+}
+#task{
+    width:70%;
+    margin-right:6%;
+}
+#addtask input:last-child{
+    width:40%;
+    margin-left: 60%;
+    margin-top:10px;
+}
+#addtask{
+    width:20%;
+    padding:1.5%;
+    border:1px solid grey;
+    height:305px;
+}
+
+.back{
+    width:25%;
+}
+.back button{
+    height:30px;
+    width:150px;
+    background: #003333;
+    color:white;
+    border:0px;
+}
+
+#updateforester{
+    width:60%;
+    text-align: left;
+    padding-left:3%;
+}
+#updateforester input{
+    width:40%;
+}
+#updateforester form{
+    border:1px solid grey;
+    padding:20px;
+    margin-top:10px;
+}
+#updateforester .update{
+    width:25%;
+    height:30px;
+    background: #003333;
+    color:white;
+    border:0px;
+    margin-left:30%;
+}
+
+#updateowner{
+    width:60%;
+    text-align: left;
+    padding-left:3%;
+}
+#updateowner input{
+    width:40%;
+}
+#updateowner form{
+    border:1px solid grey;
+    padding:20px;
+    margin-top:10px;
+}
+#updateowner .update{
+    width:25%;
+    height:30px;
+    background: #003333;
+    color:white;
+    border:0px;
+    margin-left:30%;
+}
+
+#updatetask{
+    width:60%;
+    text-align: left;
+    padding-left:3%;
+}
+#updatetask input{
+    width:40%;
+}
+#updatetask form{
+    border:1px solid grey;
+    padding:20px;
+    margin-top:10px;
+}
+#updatetask .update{
+    width:25%;
+    height:30px;
+    background: #003333;
+    color:white;
+    border:0px;
+    margin-left:30%;
+}
+
+#updatedesignation{
+    width:60%;
+    text-align: left;
+    padding-left:3%;
+}
+#updatedesignation input{
+    width:40%;
+}
+#updatedesignation form{
+    border:1px solid grey;
+    padding:20px;
+    margin-top:10px;
+}
+#updatedesignation .update{
+    width:25%;
+    height:30px;
+    background: #003333;
+    color:white;
+    border:0px;
+    margin-left:71%;
+}
+
+#updateplant{
+    width:60%;
+    text-align: left;
+    padding-left:3%;
+}
+#updateplant input{
+    width:40%;
+}
+#updateplant form{
+    border:1px solid grey;
+    padding:20px;
+    margin-top:10px;
+}
+#updateplant .update{
+    width:35%;
+    height:30px;
+    background: #003333;
+    color:white;
+    border:0px;
+    margin-left:63%;
+}
+
+.comment{
+    color:#ff3300;
+    font-size: 13px;
+}
+.good{
+    color:#ff3300;
+    font-size:16px;
+}
+
+.delete{
+    display: none;
+    position: fixed;
+    top:0px;
+    bottom:0px;
+    right:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background:#333333;
+    opacity:0.85;
+}
+.delet{
+    display: none;
+    position:fixed;
+    width:20%;
+    left:40%;
+    top:200px;
+    background:white;
+    padding:10px;
+}
+.delet img{
+    width:15px;
+    height:15px;
+    margin-left:94%;
+    cursor: pointer;
+}
+.delet h4{
+    padding:10px;
+}
+.delet button{
+    width:80px;
+    padding:5px;
+    margin: 10px;
+    margin-bottom:20px;
+    text-align: center;
+    border:0px;
+    color:white;
+    margin-top:30px;
+    background:#ff0000;
+}
+.delet button:last-child{
+    background:#003333;   
+    margin-left:70px;
+}
+
+#alldesignation{
+    width:70%;
+    margin-right:6%;
+}
+#adddesignation input{
+    width:98%;
+}
+#adddesignation input:last-child{
+    width:40%;
+    margin-left: 60%;
+    margin-top:10px;
+}
+#adddesignation{
+    width:20%;
+    padding:1.5%;
+    border:1px solid grey;
+    height:160px;
+}
+
+.session{
+    width:18%;
+    margin-left:82%;  
+    margin-top:0px;
+}
+.session h4{
+    font-size: 15px;
+}
+header button{
+    position:relative;
+    top:-35px;
+    left:85%;
+    width:10%;
+    padding:7px;
+    border:0px;
+    color:white;
+    background:#015353;
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+body{
+    width:96%;
+    margin-left:2%;
+}
+.out{
+    right:3%;
+}
+h1{
+    font-size: 30px;
+    padding-top:10px;
+}
+h6{
+    font-size: 12px;
+    padding-top:10px;
+}
+header{
+    height:90px;
+}
+.footer{
+    width:96%;
+    margin-left: 0%;
+}
+#in{
+    width:46%;
+    padding:2%;
+    margin-left:25%;
+}
+.container{
+    flex-direction: column;
+}
+#addplant,#addforester,#addowner,#adddesignation,#addtask{
+    width:30%;
+    margin-top:40px;
+}
+h2{
+    font-size:25px;
+}
+#allplant,#allforester,#allowner,#alldesignation,#task{
+    width:100%;
+    margin:0px;
+}
+#addforester{
+    width:30%;
+    height:360px;
+    margin-top:40px;
+}
+#updateplant,#updatedesignation, #updateforester, #updateowner, #updatetask{
+    width:80%;
+    text-align: left;
+    padding-left:3%;
+    margin-left:8%;
+    margin-top:20px;
+}
+#updateplant input,#updatedesignation input, #updateforester input, #updateowner input, #updatetask input{
+    width:45%;
+}
+#updateplant .update, #updatedesignation .update, #updateforester .update, #updateowner .update, #updatetask .update{
+    margin-left:66%;
+    width:30%;
+}
+.delet{
+    width:40%;
+    left:30%;
+}
+
+.delet button{
+    width:80px;
+    padding:5px;
+    margin: 10px;
+    margin-bottom:20px;
+    margin-top:30px;
+}
+.delet button:last-child{
+    background:#003333;   
+    margin-left:30%;
+}
+
+}
+
+@media (max-width: 768px) {
+body{
+    width:98%;
+    margin:0px;
+    margin-left:1%;
+}
+h1{
+    font-size: 20px;
+    padding-top:10px;
+}
+header{
+    height:50px;
+}
+footer{
+    width:100%;
+    height:30px;
+    margin-top:60px;
+}
+.footer{
+    width:100%;
+    margin:0px;
+}
+#in{
+    margin-left:8%;
+    width:80%;
+    padding:2%;
+}
+.container{
+    flex-direction: column;
+}
+#addplant,#addforester,#addowner,#adddesignation,#addtask{
+    width:86%;
+    margin-left:5%;
+    margin-top:40px;
+}
+h2{
+    font-size:25px;
+}
+form h3{
+    font-size:18px;
+}
+#allplant,#allforester,#allowner,#alldesignation,#task{
+    width:100%;
+}
+ul{
+    justify-content: flex-start;
+    flex-wrap:wrap;
+    font-size:14px;
+}
+ul:first-child{
+    display: none;
+}
+ul li{
+    width:60%;
+}
+#updateplant,#updatedesignation, #updateforester, #updateowner, #updatetask{
+    width:86%;
+    margin-left:5%;
+    margin-top:30px;
+    margin-bottom:50px;
+}
+#updateplant input,#updatedesignation input, #updateforester input, #updateowner input, #updatetask input{
+    width:90%;
+}
+#updateplant .update, #updatedesignation .update, #updateforester .update, #updateowner .update, #updatetask .update{
+    margin-left:0%;
+    margin-top:15px;
+    width:100%;
+}
+.visible{
+    display:none;
+}
+.menu{
+    display:block;
+    width:20px;
+    height:20px;
+    position: absolute;
+    left:12px;
+    top:10px;
+    cursor:pointer;
+}
+.out{
+    right:2%;
+}
+.session{
+    display: none;
+}
+#task{
+    font-size: 13px;
+}
+.delet{
+    width:85%;
+    left:3%;
+}
+.delet button{
+    width:80px;
+    padding:5px;
+    margin: 10px;
+    margin-bottom:20px;
+    margin-top:30px;
+}
+.delet button:last-child{
+    background:#003333;   
+    margin-left:5%;
+}
+.delet img:first-child{  
+    margin-left:85%;
+}
+}
